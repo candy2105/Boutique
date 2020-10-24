@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fashion18 &copy</title>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+  <style>
+
+  ::-moz-selection { background-color: #efefef; color: #f41313; }
+  ::selection { background-color: #efefef; color: #f41313; }
+  
+.row > .column {
+  padding: 0 8px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: center;
+  position: fixed;
+  margin:auto;
+  z-index: 1;
+  padding-top: 100px;
+  left:0;
+  top: 0;
+  width: 50%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+ 
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: inline;
+  
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  padding: 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: center;
+  position: fixed;
+  margin:auto;
+  z-index: 1;
+  padding-top: 100px;
+  left:0;
+  top: 0;
+  width: 50%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+ 
+}
+
+/* The Close Button */
+.close {
+background-color:white;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: inline;
+  
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  padding: 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    margin-bottom: 0px!important;
+}    
+  </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar"><a class="navbar-brand" href="home.html"><font color="FACE2D">Fashion18</font></a>
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Beauty
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="face.html">Colorful Face Pallete</a></li>
+                            <li><a href="lips.html">Lipsticks & Glosses</a></li>
+                            <li><a href="eyes.html">Eyes Shadows</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Clothing
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="top.html">Tops</a></li>
+                            <li><a href="bottom.html">Bottom</a></li>
+                            <li><a href="dress.html">Dresses</a></li>
+                            <li><a href="denim.html">Denim</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Shoes
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="heel.html">Heel</a></li>
+                            <li><a href="flat.html">Flat</a></li>
+                            <li><a href="boot.html">Boots</a></li>
+                            <li><a href="sneaker.html">Sneakers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Accesseries
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="jew.html">Jewelry</a></li>
+                            <li><a href="hand.html">Handbags</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/2.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/3.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/21.jpg" alt="Image">
+                <div class="carousel-caption">
+                  </div>
+              </div>
+                    </div>
+        </div>
+
+
+
+       
+    </div>
+
+    <div class="container text-center">
+        <h3>OUR TRENDS</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="shop.html"><img src="images/7.jpg" class="image" style="width:100%" alt="Image"></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="two.html"><img src="images/8.jpg" class="image" style="width:100%" alt="Image"></a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+          <div class="container text-center">
+              <h3>SHOP THE LOOK</h3>
+			  <div class="col-lg-12 col-sm-12">
+              <div class="col-sm-4">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/9.jpg" alt="">
+                      <div class="overlay">
+                          <a href="shop1.html"><h2>Shop <br>The<br> Look</h2></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/10.jpg" alt="">
+                      <div class="overlay">
+                          <a href="shop2.html"><h2>Shop<br> The<br> Look</h2></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="hovereffect">
+                      <img class="img-responsive" src="images/11.jpg" alt="">
+                      <div class="overlay">
+                          <a href="shop3.html"><h2>Shop <br>The<br> Look</h2></a>
+                      </div>
+                  </div>
+              </div>
+			
+			  
+           </div>
+		   </div>
+           <hr>
+           <div class="container text-center">
+
+             <h3>HOT SALE COLLECTION</h3>
+             <div class="container">
+<div class="col-sm-12 col-lg-12">
+  <div class="col-sm-4">
+    <img src="images/14.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-4">
+    <img src="images/15.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-4">
+    <img src="images/16.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+</div><br>
+             <div class="container">
+<div class="col-sm-12 col-lg-12">
+  <div class="col-sm-4">
+    <img src="images/17.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-4">
+    <img src="images/18.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-4">
+    <img src="images/19.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+</div><br>
+             <div class="container">
+<div class="col-sm-12 col-lg-12">
+  <div class="col-sm-4">
+    <img src="images/12.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-4">
+    <img src="images/13.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="col-sm-4">
+    <img src="images/20.jpg" style="height:500px; width:300px;" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+</div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      
+      <img src="images/14.jpg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides">
+      
+      <img src="images/15.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      
+      <img src="images/16.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      
+      <img src="images/17.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      
+      <img src="images/18.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      
+      <img src="images/19.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      
+      <img src="images/12.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      
+      <img src="images/13.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      
+      <img src="images/20.jpg" style="width:100%">
+    </div>
+  
+
+    <div class="caption-container">
+      <p id="caption"><input class="btn" type="button" name="" value="Add to bag" style="margin:auto; color:black; background-color:#f4bac5"></p>
+    </div>
+
+
+   
+  </div>
+</div>
+<br>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+                <footer class="container-fluid text-left" style="background-color:#222229; padding:20px; width:100%;">
+				<div class="col-sm-12 col-lg-12">
+                  <div class="col-sm-3">
+                    <h2 style="color:#FACE2D; font-size:1.5em;">Help & Support</h2>
+                    <p style="font-size:15px; "><a href="#" style="color:white;"><i class="fa fa-check" aria-hidden="true"style="font-size:14px;"></i>Shipping Info</a><br>
+                    <a href="#"style="color:white; "><i class="fa fa-check" aria-hidden="true" style="font-size:14px;"></i>Returns</a><br>
+                    <a href="#" style="color:white; "><i class="fa fa-check" aria-hidden="true" style="font-size:14px;"></i>How To Order</a><br>
+                    <a href="#" style="color:white; "><i class="fa fa-check" aria-hidden="true" style="font-size:14px;"></i>How To Track</a><br></p>
+                   </div>
+				  <div class="col-sm-3">
+                    <h2 style="color:#FACE2D; font-size:1.5em;">Customer Care</h2>
+                    <p style="font-size:15px; "><a href="#" style="color:white;"><i class="fa fa-check" aria-hidden="true"style="font-size:14px;"></i>Contact us</a><br>
+                    <a href="#" style="color:white;"><i class="fa fa-check" aria-hidden="true" style="font-size:14px;"></i>Payment Method</a><br>
+                    <a href="#" style="color:white;"><i class="fa fa-check" aria-hidden="true" style="font-size:14px;"></i>Bonus Point</a><br>
+                    <a href="#" style="color:white;"><i class="fa fa-check" aria-hidden="true" style="font-size:14px;"></i>Free Trial Center</a><br></p>
+                   
+                  </div>
+                  <div class="col-sm-3">
+                    <h2 style="color:#FACE2D; font-size:1.5em;">Find us on</h2>
+                    <a href="" style="color:black; "><i class="fa fa-twitter " aria-hidden="true" style="border-radius:100px; background-color:white;"></i></a>
+                    <a href="" style="color:black; "><i class="fa fa-google " aria-hidden="true" style="background-color:white; border-radius:100px;"></i></a>
+                    <a href="" style="color:black; "><i class="fa fa-facebook " aria-hidden="true" style="background-color: white; border-radius: 100px;"></i></a>
+                    <a href="" style="color:black; "><i class="fa fa-snapchat-ghost" aria-hidden="true" style="background-color:white;border-radius:100px; font-size:14px;"></i></a>
+                   
+                  </div>
+				  <div class="col-sm-3">
+				  <form>
+						<div class="form-group" >
+							<h2 style="color:#FACE2D; font-size:1.5em;">Sign up for Style News </h2>
+							<input type="text" class="form-control" id="name" style="width:200px;">
+							<button type="submit" class="btn-lg" style="width:150px; text-align:center; margin-top:10px;">Subscribe</button>
+						</div>
+				   </form>
+				  </div>
+				  
+				  </div>
+		
+    </footer>
+	<div class="foot">
+				&copyCopyright Designed and Developed by <font color="white">Himshikha</font>
+		</div>
+
+</body>
+</html>
